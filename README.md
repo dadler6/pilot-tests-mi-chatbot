@@ -32,7 +32,7 @@ In the "quality_tests" directory, you can find the two simulated user prompts in
 
 We ran diagloue turns (10 user, 10 chatbot) 100 times for each simulated user prompt, and then had the bot identify whether the conversations were "high" or "low" quality. 98% of the conversations were rated as "high quality". You can see these findings in "simulation_res_11162025.csv", and the raw conversations in the "simulations_11162025" directory. The tests do not use the sensing data capabilities, and just test the motivational interviewing chatbot.
 
-Looking at the examples rated as lower quality (e.g., "presence_54_11162025.csv"), we noticed that the challenges with these conversations were often not with the motivational interviewing chatbot itself, but instead with the simulated user who somehow takes on the persona of the motivational interviewing chatbot midway through these conversations. If this did not happen, it is possible that all conversations would have been rated as high quality.
+Looking at the examples rated as lower quality (e.g., "presence_54_11162025.csv"), we noticed that the challenges with these conversations were often not with the motivational interviewing chatbot itself, but instead with the simulated user who somehow takes on the persona of the motivational interviewing chatbot midway through these conversations. If this did not happen, it is possible that more conversations would have been rated as high quality.
 
 We realize these are very preliminary tests, and we look forward to continue to develop and test the chatbot with actual users and expert clinicians during the study.
 
