@@ -22,7 +22,7 @@ We believe this is okay, as the vagueness of the first prompt (without the words
 
 # High/Low Quality Conversations
 
-We used the dataset in the following paper to train an LLM classifier that detects whether conversations between our chatbot and simulated a simulated user is "high" versus "low" quality:
+We used the dataset in the following paper to train an LLM classifier that detects whether conversations between our chatbot and simulated a simulated user were "high" versus "low" quality:
 
 ```
 Pérez-Rosas, V. et al. Analyzing the Quality of Counseling Conversations: the Tell-Tale Signs of High-quality Counseling. in Proceedings of the Eleventh International Conference on Language Resources and Evaluation (LREC 2018) (eds Calzolari, N. et al.) (European Language Resources Association (ELRA), Miyazaki, Japan, 2018).
@@ -30,9 +30,11 @@ Pérez-Rosas, V. et al. Analyzing the Quality of Counseling Conversations: the T
 
 In the "quality_tests" directory, you can find the two simulated user prompts in the "simulated_users.txt" file. 
 
-We ran diagloue turns (5 user, 5 chatbot), 10 times for each simulated user prompt, and then had the bot identify whether the conversations were "high" or "low" quality. All conversations were marked as high quality. The tests do not use the sensing data capabilities, and just test the motivational interviewing chatbot.
+We ran diagloue turns (10 user, 10 chatbot) 100 times for each simulated user prompt, and then had the bot identify whether the conversations were "high" or "low" quality. 98% of the conversations were rated as "high quality". You can see these findings in "simulation_res_11162025.csv", and the raw conversations in the "simulations_11162025" directory. The tests do not use the sensing data capabilities, and just test the motivational interviewing chatbot.
 
-We realize these are very preliminary tests, and we look forward to continue to develop and test the  chatbot with actual users and expert clinicians during the study.
+Looking at the examples rated as lower quality (e.g., "presence_54_11162025.csv"), we noticed that the challenges with these conversations were often not with the motivational interviewing chatbot itself, but instead with the simulated user who somehow takes on the persona of the motivational interviewing chatbot midway through these conversations. If this did not happen, it is possible that all conversations would have been rated as high quality.
+
+We realize these are very preliminary tests, and we look forward to continue to develop and test the chatbot with actual users and expert clinicians during the study.
 
 # Sensing Tests
 
