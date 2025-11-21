@@ -24,9 +24,7 @@ We believe this is okay, as the vagueness of the first prompt (without the words
 
 We used the dataset in the following paper to train an LLM classifier that detects whether conversations between our motivational interviewing chatbot and simulated a simulated user were "high" versus "low" quality:
 
-```
 Pérez-Rosas, V. et al. Analyzing the Quality of Counseling Conversations: the Tell-Tale Signs of High-quality Counseling. in Proceedings of the Eleventh International Conference on Language Resources and Evaluation (LREC 2018) (eds Calzolari, N. et al.) (European Language Resources Association (ELRA), Miyazaki, Japan, 2018).
-```
 
 The quality detection classifier had an average (standard deviation) senstivity of 90% (11%), specificity of 92% (8%), tested across 100 different sets of 10 high and 10 low quality conversations.
 
