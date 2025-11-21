@@ -26,7 +26,7 @@ We used the dataset in the following paper to train an LLM classifier that detec
 
 Pérez-Rosas, V. et al. Analyzing the Quality of Counseling Conversations: the Tell-Tale Signs of High-quality Counseling. in Proceedings of the Eleventh International Conference on Language Resources and Evaluation (LREC 2018) (eds Calzolari, N. et al.) (European Language Resources Association (ELRA), Miyazaki, Japan, 2018).
 
-The quality detection classifier had an average (standard deviation) senstivity of 90% (11%), specificity of 92% (8%), tested across 100 different sets of 10 high and 10 low quality conversations.
+The quality detection classifier had an average (standard deviation) sensitivity of 90% (11%), specificity of 92% (8%), tested across 100 different sets of 10 high and 10 low quality conversations.
 
 In the "quality_tests" directory, you can the two prompts that were used to simulate users, specifically in the "simulated_users.txt" file. The two prompts are:
 
@@ -40,7 +40,7 @@ We ran diagloue turns (10 user, 10 chatbot) 100 times for each simulated user pr
 * 96% of the conversations in which the simulated end user was prompted with the presence prompt
 * 86% of the conversations in which the simulated end user was prompted with the sleep prompt
 
-You can see these findings in "simulation_res_11202025.csv", and the raw conversations in the "simulations_11202025" directory. The tests do not use the sensing data capabilities, and test just the motivational interviewing chatbot.
+You can see these findings in "simulation_res_11202025.csv", and the raw conversations in the "simulations_11202025" directory. In the raw conversations, the "assistant" is the motivational interviewing chatbot, and the "user" is the simulated user. The tests do not use the sensing data capabilities, and test just the motivational interviewing chatbot.
 
 We acknowledge the limitations of these tests: that they are based upon a limited number of simulated conversations that may not reflect the diversity of real-world users, and an AI classifier detecting "high" versus "low" quality conversations.
 
